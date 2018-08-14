@@ -10,6 +10,6 @@ describe('AppComponent', () => {
     }).compileComponents();
   }));
   it('Should expect element to exist', () => {
-    expect(document).toBe(true);
+    expect(document).toBeTruthy();
   });
 });
