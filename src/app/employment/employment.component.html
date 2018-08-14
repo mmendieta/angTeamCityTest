@@ -1,0 +1,15 @@
+<ul class='jobs'> Work History
+        <li *ngFor='let job of jobs' [class.selected]='job === selectedJob' (click)='onSelect(job)'>
+          <span class ='employer'>{{job.name}}</span>
+        </li>
+</ul>
+
+
+<div *ngIf='selectedJob'>
+
+  <h2>Details</h2>
+  <div><span>Position: </span>{{selectedJob.position}}</div>
+  <div><span>Dates: </span>{{selectedJob.dates}}</div>
+  <div><span>Description: </span>{{selectedJob.description}}</div>
+
+</div>
